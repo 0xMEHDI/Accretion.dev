@@ -2132,17 +2132,19 @@ body.is-preload #wrapper {
 }
 
 .platformer-video {
-position: relative;
-padding-bottom: 56.25%;
-padding-top: 30px; height: 0; overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
 .platformer-video iframe,
 .platformer-video object,
 .platformer-video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
