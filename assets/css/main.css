@@ -1314,9 +1314,9 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #777777;
-  font-size: 20pt;
-  line-height: 1.75em;
+  color: #666666;
+  font-size: 16pt;
+  line-height: 1.45em;
 }
 
 @media screen and (max-width: 1680px) {
@@ -2131,7 +2131,7 @@ body.is-preload #wrapper {
   }
 }
 
-.platformer-video {
+.youtube-video {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
@@ -2139,9 +2139,9 @@ body.is-preload #wrapper {
   overflow: hidden;
 }
 
-.platformer-video iframe,
-.platformer-video object,
-.platformer-video embed {
+.youtube-video iframe,
+.youtube-video object,
+.youtube-video embed {
   position: absolute;
   top: 0;
   left: 0;
