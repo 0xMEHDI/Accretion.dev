@@ -1314,7 +1314,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 body, input, textarea, select {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #666666;
+  color: #444444;
   font-size: 16pt;
   line-height: 1.45em;
 }
@@ -2147,4 +2147,112 @@ body.is-preload #wrapper {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.collapsible {
+  width: 100%;
+  color: #444;
+  background-color: #ddd;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+
+.collapsible:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 12px;
+  float: right;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.collapsible-content {
+  padding: 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #eee;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible-content p {
+  text-align: justify;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.section-intro p,
+.section-end p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.intro p {
+  margin-bottom: 20px;
+}
+
+hr {
+  padding: 0;
+  margin: 30px 0;
+}
+
+.card-header {
+  background-color: #007BFF;
+}
+
+.card-header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-header p b
+{
+  color: white;
+}
+
+.card-body
+{
+  background-color: #f3f3f3
+}
+
+.card-body p,
+.card-body ul
+{
+  font-size: 18px;
+}
+
+.card-body li
+{
+  margin: 0;
+}
+
+.card
+{
+  height: 100%;
+}
+
+img.card-img-top
+{
+  height: 220px;
+}
+
+small.text-muted
+{
+  position: absolute;
+  right:    20px;
+  bottom:   20px;
 }

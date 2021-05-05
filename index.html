@@ -2,9 +2,10 @@
 <html>
 
 <head>
-  <title>Accretion</title>
+  <title>Accretion.dev</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="icon" href="images/home/dev.ico" />
 </head>
@@ -18,11 +19,11 @@
     <nav id="nav" style="width: 88%">
       <a href="#Home" class="icon solid fa-home" style="float: left"><span>Home</span></a>
       <a href="#About" class="icon solid fa-fingerprint" style="float: left"><span>About Me</span></a>
-      <a href="#Projects" class="icon solid fa-code" style="float: left"><span>Projects</span></a>
       <a href="#Games" class="icon solid fa-gamepad" style="float: left"><span>Games</span></a>
+      <a href="#Mods" class="icon solid fa-tools" style="float: left"><span>Mods</span></a>
+      <a href="#Projects" class="icon solid fa-code" style="float: left"><span>Projects</span></a>
       <a href="#Contact" class="icon solid fa-at" style="float: right"><span>Contact</span></a>
     </nav>
-
 
     <!-- Main -->
     <div id="main">
@@ -40,7 +41,6 @@
           <img src="images/home/profile.jpg" alt="" />
         </a>
       </article>
-
 
       <!-- About -->
       <article id="About" class="panel">
@@ -64,318 +64,549 @@
           <br />
           I currently have experience working with:
           <div class="row">
-            <div class="column" style="width:33%">
+            <div class="column" style="width:50%">
               <ul>
                 <li>C#</li>
+                <li>C++</li>
                 <li>Java</li>
-                <li>HTML5</li>
               </ul>
             </div>
-            <div class="column">
+            <div class="column" style="width:50%">
               <ul>
-                <li>C++
+                <li>Python</li>
                 <li>OpenGL</li>
-                <li>CSS3</li>
+                <li>HTML/CSS</li>
               </ul>
             </div>
           </div>
         </p>
       </article>
-
 
       <!-- Projects -->
       <article id="Projects" class="panel">
-        <header>
-          <h2>Projects (CURRENTLY BEING UPDATED)</h2>
-        </header>
-        <hr />
-        <p style="margin-bottom: 30px">
-          Welcome to the Projects section.
-          <br />
-          <br />
-          Below is a collection of most my past and current projects.
-          These are works that either always had a small scope or are ones I haven't yet completed to a satisfying degree.
-          <br />
-          Any project listed below will have an appended description citing key specific and was worked on by myself, outside any academic context
-          unless otherwise specified.
-          <br />
-          <br />
-          Be sure to visit the <a href="#Games">Games</a>
-          page to have a look at my more complete game related projects.
-          <br />
-          A complete list of all my works and contributions can also be found through my
-          <a href="https://github.com/AccretionCD" target="_blank">GitHub</a> profile.
-        </p>
-        <hr style="margin-top: 30px" />
-        <hr style="margin-top: 0px" />
-
-        <section>
-
-          <!-- Snapshots -->
+        <div class="section-intro">
+          <header>
+            <h2>Projects</h2>
+          </header>
+          <hr />
           <p>
-            <b>— Snapshots from a potential side scrolling dungeon crawler</b>
-            <b style="float: right">C# — Unity</b>
+            Welcome to the Projects section.
             <br />
             <br />
-            This is an idea I've begun toying with the past couple of weeks.
-            The idea was to create a procedurally generated side scrolling dungeon crawler/roguelite.
+            Below is a collection of most my past and current projects.
+            These are works that either always had a small scope or are ones I haven't yet completed to a satisfying degree.
             <br />
-            These are only snippets, but I hope to soon build them up into a more complete project.
-          </p>
-          <div class="row">
-            <div class="col-6 col-12-small">
-              <div class="youtube-video">
-                <iframe src="https://www.youtube-nocookie.com/embed/DnkmRIT-LsI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p style="text-align: justify; margin:10px; margin-top: 20px; font-size: 18px; line-height: 24px">
-                A short character movement demo.
-                <br />
-                <br />
-                This demonstrates three movement states: walking, running and sprinting; each with different animations and effects on movement,
-                as well as a basic attack system that will be expanded upon to include aerial attacks and other weapons.
-                <br />
-                <br />
-                The player character being kinematic, it uses a rigidbody physics simulation I implemented from scratch using Raycasting techniques.
-                <br />
-              </p>
-            </div>
-            <div class="col-6 col-12-small">
-              <div class="youtube-video">
-                <iframe src="https://www.youtube-nocookie.com/embed/smI2nIvrKAc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <p style="text-align: justify; margin:10px; margin-top: 20px; font-size: 18px; line-height: 24px">
-                First of two snapshots demonstrating the procedural level generation algorithm I implemented for the game.
-                <br />
-                <br />
-                This is rougly based on Spelunky creator, Derek Yu's algorithm, as he described it in his book.
-                <br />
-                I've implemented the algorithm to generate levels on a grid of any desired size and allowing for any number of room templates to be added,
-                further increasing the variety between each and every level.
-                <br />
-                <br />
-                A second snapshot can be viewed through this <a href="https://www.youtube.com/watch?v=Hb0ZWrfBnyU">YouTube link</a>.
-              </p>
-            </div>
-          </div>
-          <hr />
-
-          <!-- First "Games" -->
-          <p style="margin-bottom: 0px">
-            <b>— My first foray into game development</b>
-            <b style="float: right">C# — Unity</b>
+            Any project listed below will have an appended description citing key specific and was worked on by myself, outside any academic context
+            unless otherwise specified.
             <br />
-            <br />
-            These three "games" were my first delve into the type of programming I knew I'd actually enjoy.
-            <br />
-            These were how I began familiarizing myself with the basic building blocks of most games;
-            namely movement, physics and collision systems, as well as some core concepts of game design.
-            <br />
-            <br />
-          </p>
-          <div class="row">
-            <div class="col-4 col-12-small">
-              <video autoplay loop muted playsinline style="width: 100%">
-                <source src="images/projects/rocket-game.webm" /></video>
-              <p style="text-align: justify; margin:10px; font-size: 18px; line-height: 24px">
-                A simple 2.5D game where you have to guide a rocket through a level, avoiding any and all contact.
-                <br />
-                <br />
-                This was my first ever game and as simple as it was, it served as good motivation to advance my learning.
-              </p>
-            </div>
-            <div class="col-4 col-12-small">
-              <video autoplay loop muted playsinline style="width: 100%">
-                <source src="images/projects/rail-shooter.webm" /></video>
-              <p style="text-align: justify; margin:10px; font-size: 18px; line-height: 24px">
-                An on-rails shooter where you fight off an invading force of space ships.
-                <br />
-                <br />
-                This was my attempt at making a game with a proper 3D environment,
-                dealing with slightly more advanced collision detection, particles systems and UI.
-              </p>
-            </div>
-            <div class="col-4 col-12-small">
-              <video autoplay loop muted playsinline style="width: 100%">
-                <source src="images/projects/tower-defense-game.webm" /></video>
-              <p style="text-align: justify; margin:10px; font-size: 18px; line-height: 24px">
-                What was to be a tower defense game. My main motivation behind this particular project was familiarizing myself with pathfinding.
-                <br />
-                <br />
-                I will say however, that the project is even less complete than the previous two,
-                as I'd lost interest after implementing my own DFS algorithm.
-              </p>
-            </div>
-          </div>
-          <hr />
-
-          <!-- OpenGL project -->
-          <p style="margin-bottom: 0px">
-            <b>— A simple OpenGL scene made for a university module coursework</b>
-            <b style="float: right">Java — OpenGL</b>
-            <br />
-            <br />
-            We were tasked with creating a nature themed scene with one complex animated object; with proper use of materials, textures, lightning and normals.
-            <br />
-            The video above was recorded as part of the coursework and gives a short overview of the scene and it's components.
-            <br />
-            <br />
-          </p>
-          <div class="col-6 col-12-small">
-            <div class="youtube-video">
-              <iframe src="https://www.youtube-nocookie.com/embed/fC454uRIMqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-          <hr />
-          <hr style="margin-top: 0px" />
-          <p>
-            You've reached the end of the section.
             <br />
             Be sure to visit the <a href="#Games">Games</a>
             page to have a look at my more complete game related projects.
+            <br />
+            A complete list of all my works and contributions can also be found through my
+            <a href="https://github.com/AccretionCD" target="_blank" rel="noopener noreferrer">GitHub</a> profile.
           </p>
+          <hr />
+        </div>
+
+        <section>
+          <!-- Snippets -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">Snippets from a potential side scrolling dungeon crawler</b>
+                <b style="float:right">C# — Unity</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div class="intro">
+                <p>
+                  The idea was to create a procedurally generated side scrolling dungeon crawler/roguelite.
+                  <br />
+                  These are only snippets, but I hope to soon build them up into a more complete project.
+                  <br />
+                  <br />
+                  Video showcases included.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-6 col-12-small">
+                  <img class="thumbnail" src="images/projects/Thumbnail 1.png" alt="Project Thumbnail">
+                  <button type="button" class="collapsible">Description</button>
+                  <div class="collapsible-content">
+                    <p>
+                      A short character movement demo.
+                      <br />
+                      <br />
+                      This demonstrates three movement states: walking, running and sprinting; each with different animations and effects on movement,
+                      as well as a basic attack system that will be expanded upon to include aerial attacks and other weapons.
+                      <br />
+                      <br />
+                      The player character being kinematic, it uses a rigidbody physics simulation I implemented from scratch using Raycasting techniques.
+                      <br />
+                      <br />
+                      <a href="https://www.youtube-nocookie.com/embed/DnkmRIT-LsI?rel=0">Video Showcase</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-6 col-12-small">
+                  <img class="thumbnail" src="images/projects/Thumbnail 2.png" alt="Project Thumbnail">
+                  <button type="button" class="collapsible">Description</button>
+                  <div class="collapsible-content">
+                    <p>
+                      First of two snippets demonstrating the procedural level generation algorithm I implemented for the game.
+                      <br />
+                      <br />
+                      This is rougly based on Spelunky creator, Derek Yu's algorithm, as he described it in his book.
+                      <br />
+                      <br />
+                      I've implemented the algorithm to generate levels on a grid of any desired size and allowing for any number of room templates to be added,
+                      further increasing the variety between each and every level.
+                      <br />
+                      <br />
+                      <a href="https://www.youtube-nocookie.com/embed/smI2nIvrKAc?rel=0">Video Showcase 1</a>
+                      <a href="https://www.youtube-nocookie.com/embed/Hb0ZWrfBnyU?rel=0" style="float:right">Video Showcase 2</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- First "Games" -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">My first foray into game development</b>
+                <b style="float:right">C# — Unity</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div class="intro">
+                <p>
+                  These three "games" were my first delve into the type of programming I knew I'd actually enjoy.
+                  <br />
+                  These were how I began familiarizing myself with the basic building blocks of most games;
+                  namely movement, physics and collision systems, as well as some core concepts of game design.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-4 col-12-small">
+                  <video autoplay loop muted playsinline style="width: 100%" class="thumbnail">
+                    <source src="images/projects/rocket-game.webm" />
+                  </video>
+                  <button type="button" class="collapsible">Description</button>
+                  <div class="collapsible-content">
+                    <p>
+                      A simple 2.5D game where you have to guide a rocket through a level, avoiding any and all contact.
+                      <br />
+                      <br />
+                      This was my first ever game and as simple as it was, it served as good motivation to advance my learning.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-12-small">
+                  <video autoplay loop muted playsinline style="width: 100%" class="thumbnail">
+                    <source src="images/projects/rail-shooter.webm" />
+                  </video>
+                  <button type="button" class="collapsible">Description</button>
+                  <div class="collapsible-content">
+                    <p>
+                      An on-rails shooter where you fight off an invading force of space ships.
+                      <br />
+                      <br />
+                      This was my attempt at making a game with a proper 3D environment,
+                      dealing with slightly more advanced collision detection, particles systems and UI.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-4 col-12-small">
+                  <video autoplay loop muted playsinline style="width: 100%" class="thumbnail">
+                    <source src="images/projects/tower-defense-game.webm" />
+                  </video>
+                  <button type="button" class="collapsible">Description</button>
+                  <div class="collapsible-content">
+                    <p>
+                      What was to be a tower defense game. My main motivation behind this particular project was familiarizing myself with pathfinding.
+                      <br />
+                      <br />
+                      I will say however, that the project is even less complete than the previous two,
+                      as I'd lost interest after implementing my own DFS algorithm.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- Blender project -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">University coursework: Blender animation</b>
+                <b style="float:right">Blender</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div class="intro">
+                <p>
+                  We were tasked with creating a minute long animation depicting a technological advancement that one would see humanity achieving someday in the future.
+                  <br />
+                  <br />
+                  Below is said animation showcasing a Dyson sphere, a futuristic super structure theorised to be utilised by more advanced civilisations to harvest energy from their local sun.
+                </p>
+              </div>
+              <div class="youtube-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/uG0mkwMuiSU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- OpenGL project -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">University coursework: OpenGL animation</b>
+                <b style="float:right">Java — OpenGL</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div class="intro">
+                <p>
+                  We were tasked with creating a nature themed scene with one complex animated object; with proper use of materials, textures, lightning and normals.
+                  <br />
+                  <br />
+                  The video above was recorded as part of the coursework and gives a short overview of the scene and it's components.
+                </p>
+              </div>
+              <div class="youtube-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/fC454uRIMqs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!-- End of section -->
+          <hr />
+          <div class="section-end">
+            <p>
+              You've reached the end of the section.
+              <br />
+              <br />
+              Be sure to visit the <a href="#Games">Games</a> page to have a look at my more complete game related projects, or the <a href="#Mods">Mods</a> page for the game mods I've worked on.
+            </p>
+          </div>
+
         </section>
       </article>
 
-
       <!-- Games -->
       <article id="Games" class="panel">
-        <header>
-          <h2>Games (CURRENTLY BEING UPDATED)</h2>
-        </header>
-        <hr />
-        <p style="margin-bottom: 30px">
-          Welcome to the Games section.
-          <br />
-          <br />
-          This particular section houses all the game related works I have either completed or that are well or their way to becoming so.
-          <br />
-          All entries below will have an appended description citing key specifics and were worked on by myself,
-          outside any academic context unless otherwise stated.
-          <br />
-          <br />
-          Be sure to visit the <a href="#Projects">Projects</a> page to view my smaller or less complete projects.
-          <br />
-          A complete list of all my works and contributions can also be found through my
-          <a href="https://github.com/AccretionCD" target="_blank">GitHub</a> profile.
-        </p>
-        <hr style="margin-top: 30px" />
-        <hr style="margin-top: 0px" />
-
-        <section>
-
-          <!--Top Down Shooter-->
-          <div>
-            <div class="youtube-video">
-              <iframe src="https://www.youtube-nocookie.com/embed/ucI1w3D1h4s?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p style="text-align: justify; margin:20px; margin-top: 30px">
-              <b>— A 3D top-down Shooter</b>
-              <b style="float: right">C# — Unity</b>
-              <br />
-              <br />
-              Currently my most complete game. After working on the platformer listed above,
-              I realized that hand crafting levels wasn't something I found to be very enjoyable.
-              That experience led me down the path of generating levels through code, which I found both challenging and rewarding.
-              <br />
-              <br />
-              The goal of the game is to survive an increasing number of enemies per wave as they try to overwhelm you with numbers.
-              At the start of each wave, the arena is randomly generated based on a number of preset parameters I setup,
-              chief among which are map size and obstacle percentage.
-              Each individual wave can spawn enemies in varying amounts and at a varying rate,
-              with different health and/or speed values, ensuring every run is unique in both layout and challenge.
-              <br />
-              <br />
-              This project has taught much about various aspects of game development, from both a programming and design point of view:
-              <br />
-              <ul style="text-align: justify; margin:20px; margin-top: 30px">
-                <li>
-                  Programming wise, I've had to tackle collision and enemy AI in a more involved way, as well as navmeshes, event subscriptions, coroutines
-                  and some more advanced techniques like the Fisher-Yates shuffle and floodfill algorithms.
-                </li>
-                <br />
-                <li>
-                  Design wise, I've had to, for the first time, properly address issues of balancing by adding/removing features
-                  to neither trivialize any challenge provided by the game, nor impede the player's ability to properly take control of the character.
-                </li>
-              </ul>
-            </p>
-          </div>
+        <div class="section-intro">
+          <header>
+            <h2>Games</h2>
+          </header>
           <hr />
-
-          <!-- Permafrost -->
-          <div>
-            <div class="youtube-video">
-              <iframe src="https://www.youtube-nocookie.com/embed/4-gFkmY4vnI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p style="text-align: justify; margin:20px; margin-top: 30px">
-              <b>— A Survival Colony Sim</b>
-              <b style="float: right">C# — MonoGame / XNA</b>
-              <br />
-              <br />
-              This particular game is being actively and heavily worked on as you read this,
-              so I'd like to point out that both this bit of text as well as the video demo above are very much subject to change.
-              <br />
-              <br />
-              This project is part of a year long assignment for a University module,
-              for which the requirement is to develop a strategy game of some kind.
-              It is being actively worked on by a group of 4 team members including myself.
-              <br />
-              Our chief inspiration for the game is RimWorld but with a more hand crafted narrative experience.
-              <br />
-              <br />
-              Working on this has definitely brought about new experiences for me, both positive and negative:
-              <ul style="text-align: justify; margin:20px; margin-top: 30px">
-                <li>
-                  I've learned alot from my team members from a technical point of view. Each of us has their own interests
-                  and levels of proficiency in different areas of programming, and the exposure to these has led me to put my own
-                  ability in perspective and gauge it objectively.
-                </li>
-                <br />
-                <li>
-                  I've familiarized myself with the usage of frameworks such as MonoGame, as well as external libraries such as Myra and GeonBit.
-                </li>
-                <br />
-                <li>
-                  I've tackled a multitude of lower level features such as pathfinding, lighting, animations, serialization and UI;
-                  as well as higher level ones, namely inventory systems, resources and crafting systems.
-                </li>
-                <br />
-                <li>
-                  I've also come to learn how to adapt to working within a team where not all team members share the same level of technical ability,
-                  drive to create as well designed and fun a game as possible nor the will to make concessions for the sake of the project proceeding smoothly.
-                </li>
-              </ul>
-            </p>
-          </div>
-          <hr />
-
-          <!-- 2D Platformer -->
-          <div>
-            <div class="youtube-video">
-              <iframe src="https://www.youtube-nocookie.com/embed/q5jdMg4I05A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p style="text-align: justify; margin:20px; margin-top: 30px">
-              <b>— A 2D side scrolling Platformer</b>
-              <b style="float: right">C# — Unity</b>
-              <br />
-              <br />
-              This is was the first game I felt was, at least from a mechanics' point of view, fairly complete (short of a few kinks).
-              <br />
-              <br />
-              It currently only contains one level, but is relatively feature complete otherwise;
-              it uses physics simulation I implemented from scratch using Raycasting, leading to more accurate collision detection and tighter controls.
-              <br />
-              The game features a simple but effective enemy AI, collectibles, along with some basic UI and sound effects.
-            </p>
-          </div>
-          <hr />
-
-          <hr style="margin-top: 0px" />
           <p>
-            You've reached the end of the section.
+            Welcome to the Games section.
+            <br />
+            <br />
+            This particular section houses all the game related works I have either completed or that are well or their way to becoming so.
+            <br />
+            All entries below will have an appended description citing key specifics and were worked on by myself,
+            outside any academic context unless otherwise stated.
+            <br />
             <br />
             Be sure to visit the <a href="#Projects">Projects</a> page to view my smaller or less complete projects.
+            <br />
+            A complete list of all my works and contributions can also be found through my
+            <a href="https://github.com/AccretionCD" target="_blank" rel="noopener noreferrer">GitHub</a> profile.
           </p>
+          <hr />
+        </div>
+
+        <section>
+          <!-- Permafrost -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">A Survival Colony Sim</b>
+                <b style="float:right">C# — MonoGame / XNA</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div style="margin-bottom:20px" class="youtube-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/4-gFkmY4vnI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <button stype="button" class="collapsible">Description</button>
+              <div class="collapsible-content">
+                <br />
+                <p style="line-height:22px">
+                  The current showcase is that of an older version of the game. A newer one is currently in the works.
+                  <br />
+                  <br />
+                  This project was part of a year long assignment for a University module,
+                  for which the requirement was to develop a strategy game of some kind.
+                  It was worked on by a group of 4 team members including myself.
+                  <br />
+                  Our chief inspiration for the game was RimWorld but with a more hand crafted narrative experience.
+                  <br />
+                  <br />
+                  Working on this has definitely brought about new experiences for me:
+                  <ul style="line-height:22px">
+                    <li style="margin:20px 0px">
+                      I've learned alot from my team members from a technical point of view. Each of us had their own interests
+                      and levels of proficiency in different areas of programming, and the exposure to these has led me to put my own
+                      ability in perspective and gauge it objectively.
+                    </li>
+                    <li style="margin-bottom:20px">
+                      I've familiarized myself with the usage of frameworks such as MonoGame, as well as external libraries such as Myra and GeonBit.
+                    </li>
+                    <li style="margin-bottom:20px">
+                      I've tackled a multitude of lower level features such as pathfinding, lighting, animations, serialization and UI;
+                      as well as higher level ones, namely inventory systems, resources and crafting systems.
+                    </li>
+                    <li>
+                      I've also come to learn how to adapt to working within a team where not all team members share the same level of technical ability,
+                      drive to create as well designed and fun a game as possible nor the will to make concessions for the sake of the project proceeding smoothly.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!--Top Down Shooter-->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">A 3D top-down Shooter</b>
+                <b style="float:right">C# — Unity</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div style="margin-bottom:20px" class="youtube-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/ucI1w3D1h4s?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <button stype="button" class="collapsible">Description</button>
+              <div class="collapsible-content">
+                <br />
+                <p style="line-height:22px">
+                  Currently my most completed game. After working my first platformer I realised I wanted to try a different approach to level design through procedural generation.
+                  <br />
+                  <br />
+                  The goal of the game is to survive an increasingly larger waves of enemies as they try to overwhelm you with numbers.
+                  At the start of each wave, the arena is randomly generated based on a sizeable set of parameters, ensuring every run is unique in both layout and challenge.
+                  <br />
+                  <br />
+                  This project has taught much about various aspects of game development, from both a programming and design point of view:
+                  <br />
+                  <ul style="line-height:22px">
+                    <li style="margin:20px 0px">
+                      Programming wise, I've had to tackle collision and enemy AI in a more involved way, as well as navmeshes, event subscriptions, coroutines
+                      and some intersting techniques in the Fisher-Yates shuffle and floodfill algorithms.
+                    </li>
+                    <li>
+                      Design wise, I've had to, for the first time, properly address issues of balancing by adding/removing features
+                      to neither trivialize any challenge provided by the game, nor impede the player's ability to intuitively take control of the character.
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+
+          <!-- 2D Platformer -->
+          <div class="card">
+            <div class="card-header">
+              <p>
+                <b style="float:Left">A 2D side scrolling Platformer</b>
+                <b style="float:right">C# — Unity</b>
+              </p>
+            </div>
+            <div class="card-body">
+              <div style="margin-bottom:20px" class="youtube-video">
+                <iframe src="https://www.youtube-nocookie.com/embed/q5jdMg4I05A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <button stype="button" class="collapsible">Description</button>
+              <div class="collapsible-content">
+                <p style="line-height:22px">
+                  This is was the first game I felt was, at least from a mechanics' point of view, fairly complete (short of a few kinks).
+                  <br />
+                  <br />
+                  It currently only contains one level, but is relatively feature complete otherwise;
+                  it uses physics simulation I implemented using Raycasting, leading to more accurate collision detection and tighter controls.
+                  <br />
+                  <br />
+                  The game features a simple but effective enemy AI, collectibles, along with some basic UI and sound effects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <div class="section-end">
+            <p>
+              You've reached the end of the section.
+              <br />
+              <br />
+              Be sure to visit the <a href="#Projects">Projects</a> page to view my smaller or less complete projects, or the <a href="#Mods">Mods</a> page for the game mods I've worked on.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      <!-- Mods -->
+      <article id="Mods" class="panel">
+        <div class="section-intro">
+          <header>
+            <h2>Mods</h2>
+          </header>
+          <hr />
+          <p>
+            Welcome to the Mods section.
+            <br />
+            <br />
+            Here are listed a number of mods for various games that I've either made myself or worked on as part of a larger team.
+            As of now, all of the below showcased works are hosted on <a href="https://www.nexusmods.com" target="_blank" rel="noopener noreferrer">Nexus Mods</a>.
+            <br />
+            <br />
+            Be sure to visit the <a href="#Games">Games</a>
+            page to have a look at my more complete game related projects.
+            <br />
+            A complete list of all my works and contributions can also be found through my
+            <a href="https://github.com/AccretionCD" target="_blank" rel="noopener noreferrer">GitHub</a> profile.
+          </p>
+          <hr />
+        </div>
+
+        <section>
+          <!-- Bannerlord mods -->
+          <div class="intro">
+            <p>
+              <b>— Mods I've created for TaleWorld's Mount & Blade II: Bannerlord</b>
+            </p>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/2162/2162-1600187673-696913269.jpeg" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">AI Marriage</h5>
+                    <p class="card-text">Implements a marriage system between NPCs in the game, allowing for dynasties to subsist throughout a campaign where they would otherwise die out.</p>
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2162" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">4,500+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/270/270-1586266080-1084232895.jpeg" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">Companion Overhaul</h5>
+                    <p class="card-text">Fixes the game's generation of appearances for potential companions found in taverns so at to render more aesthetically pleasing.</p>
+                    <br />
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/270" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">10,400+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/2149/2149-1599707992-1436047011.png" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">Settlement Icons</h5>
+                    <p class="card-text">Renders various types of icons over settlement and city banners so as to indicate the presence of resources, availablity of quests and tournaments, available troops and more.</p>
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2149" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">19,600+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/2154/2154-1599911332-636892795.jpeg" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">Tier Based Caravan Size</h5>
+                    <p class="card-text">Implements a system which provides modular bonuses to caravan sizes based the its owner's clan tier.</p>
+                    <br />
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2154" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">1,600+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/377/377-1586484444-1664597403.png" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">Warband Killfeed</h5>
+                    <p class="card-text">Implements a color coded killfeed during battles in the style of Warband, allowing for differentiation between types of casualties as well as their originating side.</p>
+                    <br />
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/377" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">2,800+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3174/images/thumbnails/2155/2155-1599913782-603017231.png" alt="Mod thumbnail">
+                  <div class="card-body">
+                    <h5 class="card-title">Yell to Inspire</h5>
+                    <p class="card-text">Implements a new, configurable, perk based morale system during battles, allowing the player to emit a battle cry which can raise friendly troops' morale as well as lower the enemy's.</p>
+                    <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2155" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+                    <p class="card-text"><small class="text-muted">2,500+ Total Downloads</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!-- Valheim mods -->
+          <div class="intro">
+            <p>
+              <b>— Largest mod to date for Iron Gate's Valheim</b>
+            </p>
+          </div>
+          <div class="card mb-3">
+            <img class="card-img-top" src="https://staticdelivery.nexusmods.com/mods/3667/images/headers/4_1613892783.jpg" alt="Mod banner">
+            <div class="card-body">
+              <h5 class="card-title">Valheim Plus</h5>
+              <p class="card-text">
+                <span>A mod aimed at improving the gameplay and quality of life of Valheim.</span>
+                <br />
+                <span>It includes a vast a mount of features which myself and others have worked on since the game's release.</span>
+                <br />
+                <br />
+                <a href="https://valheim.plus/" target="_blank" rel="noopener noreferrer" style="float:left">Website</a>
+                <a href="https://github.com/valheimPlus/ValheimPlus" target="_blank" rel="noopener noreferrer" style="float:right">Github Repository</a>
+                <br />
+                <p class="card-text"><small class="text-muted">270,000+ Total Downloads</small></p>
+              </p>
+              <a href="https://www.nexusmods.com/mountandblade2bannerlord/mods/2155" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Mod Page</a>
+            </div>
+          </div>
+          <hr />
+
+          <!-- End of section -->
+          <div class="section-end">
+            <p>
+              You've reached the end of the section.
+              <br />
+              <br />
+              Be sure to visit the <a href="#Games">Games</a> page to have a look at my more complete game related projects, or the <a href="#Projects">Projects</a> page to view my smaller or less complete projects.
+            </p>
+          </div>
         </section>
       </article>
 
@@ -422,23 +653,28 @@
     <!-- Footer -->
     <div id="footer">
       <ul class="copyright">
-        <li>Mehdi Ennaji&nbsp;&nbsp;&copy;&nbsp;&nbsp;2020&nbsp;</li>
+        <li>Mehdi Ennaji&nbsp;&nbsp;&copy;&nbsp;&nbsp;2021&nbsp;</li>
         <li>&nbsp;
           <a href="https://github.com/AccretionCD" target="_blank" class="fab fa-github" style="text-decoration: none"></a>
         </li>
         <li>&nbsp;
-          <a href="https://www.linkedin.com/in/mehdi-ennaji-380556a9/" target="_blank" class="fab fa-linkedin" style="text-decoration: none"></a>
+          <a href="https://www.linkedin.com/in/mehdi-ennaji-380556a9/" target="_blank" rel="noopener noreferrer" class="fab fa-linkedin" style="text-decoration: none"></a>
         </li>
       </ul>
     </div>
+
   </div>
 
   <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  <div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/collapsible.js"></script>
+  </div>
 
 </body>
 
